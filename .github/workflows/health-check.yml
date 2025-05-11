@@ -5,7 +5,7 @@ on:
     branches: ['main']
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */12 * * *'
   issues:
     types: [opened, closed]
 
@@ -52,7 +52,7 @@ jobs:
         env:
           SOURCES: |
             GitHub->https://github.com
-            Facebook->https://facebook.com
+            Mail->https://purelymail.com
           GITHUB_TOKEN: ${{ github.token }}
           JOB_NAME: ${{ github.workflow }}
           ARTIFACT_NAME: ${{ env.ARTIFACT_NAME }}
