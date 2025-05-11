@@ -53,6 +53,7 @@ jobs:
           SOURCES: |
             GitHub->https://github.com
             Mail->https://purelymail.com
+            Freedesktop->https://gitlab.freedesktop.org
           GITHUB_TOKEN: ${{ github.token }}
           JOB_NAME: ${{ github.workflow }}
           ARTIFACT_NAME: ${{ env.ARTIFACT_NAME }}
